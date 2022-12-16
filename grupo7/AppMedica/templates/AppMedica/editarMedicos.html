@@ -1,0 +1,36 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">Formulario de Medico</h1>
+    {% endblock %}
+
+
+    {% block contenido2 %}
+
+
+            {% if miFormulario.errors %}
+
+            <p>ERROOOOOR!!!!!!!!!!!!!!</p>
+            {% endif %}
+
+
+            <form action="" method="POST">{% csrf_token %}
+
+                <table>
+
+                {{  miFormulario.as_table    }}
+
+                </table>
+
+                <input type="submit" value="Editar">
+            </form>
+
+         
+
+    {% endblock %}
+    {%block contenido5%}
+    {%endblock%}
+
+

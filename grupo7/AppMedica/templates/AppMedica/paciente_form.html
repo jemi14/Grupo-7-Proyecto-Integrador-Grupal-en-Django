@@ -1,0 +1,34 @@
+{% extends "AppMedica/padre.html" %}
+
+
+{% load static %}
+
+        {% block contenido %}
+            <h1 class="mb-1">Formulario de paciente nuevo</h1>
+        {% endblock %}
+
+
+        {% block contenido2 %}
+
+
+          <form method="POST"> {% csrf_token %}
+
+          {{form.as_p}}
+
+
+          <input type="submit" value="Enviar" />
+
+          </form>
+
+        {% endblock %}
+
+        {% block contenido3 %}
+
+
+        {% endblock %}
+        {% block contenido4 %}
+
+        {% endblock %}
+        {%block contenido5%}
+        {%endblock%}
+

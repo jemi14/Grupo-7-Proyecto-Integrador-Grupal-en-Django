@@ -1,0 +1,27 @@
+{% extends "AppMedica/padre.html" %}
+
+{% load static %}
+
+        {% block contenido %}
+            <h1 class="mb-1">Detalle del paciente</h1>
+        {% endblock %}
+
+
+        {% block contenido2 %}
+
+
+          <p>Nombre del paciente: <i> {{ paciente.nombre}}</i></p>
+          <p>Apellido del paciente: <i> {{ paciente.apellido}}</i></p>
+          <p>Fecha de nacimiento: <i> {{ paciente.fNac}}</i></p>
+          <p>Telefono: <i> {{ paciente.telefono}}</i></p>
+          <p>Email: <i> {{ paciente.email}}</i></p>
+          <p>Servicio Solicitado: <i> {{ paciente.servicio}}</i></p>
+
+          <p>
+
+            <a href="{% url 'List' %}">Regresar</a>
+
+          </p>
+         
+
+        {% endblock %}

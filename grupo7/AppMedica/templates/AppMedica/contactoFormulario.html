@@ -1,0 +1,47 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">Nuestro equipo está siempre atento y a disposición para ayudar</h1>
+    {% endblock %}
+
+    {% block contenido2 %}
+        <p class="text-white-75 mb-5">Scrolea para encontrar el fomulario de contacto</p>
+
+    {% endblock %}
+
+    {% block contenido3 %}
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 text-center">    
+            <h1>Dejá tus datos y qué tipo de asistencia necesitas así te ayudamos.</h1>
+            <p>¡Por favor tener en cuenta que CHApp Medica no es un servicios de emergencias!</p>
+            {% if miFormulario.errors %}
+        </div>
+    </div>   
+        <p><Errorrr</p>
+    
+        {% endif %}
+        
+        <form action="/AppMedica/contactoFormulario/" method="POST">{% csrf_token %}
+            
+  
+            <table>
+            
+            {{ miFormulario.as_table }}
+            
+            </table>
+
+            <input type="submit" value="Envio">
+
+        </form>
+
+    {% endblock %}
+    
+    {% block contenido4 %}
+    
+    {% endblock %}
+    {%block contenido5%}
+    {%endblock%}
+
+

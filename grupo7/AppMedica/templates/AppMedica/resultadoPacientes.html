@@ -1,0 +1,43 @@
+{% extends "AppMedica/padre.html" %}
+
+
+{% load static %}
+
+        {% block contenido2 %}
+
+        {% endblock %}
+
+
+        {% block contenido %}
+
+
+            <h1>BUSCANDO AL PACIENTE</h1>
+
+            {% if pacientes %}
+
+                <ul>
+                {% for paciente in pacientes %}
+
+                <li>NOMBRE:{{paciente.nombre}}</li>
+                <li>APELLIDO:{{paciente.apellido}}</li>
+                <li>FECHA DE NACIMIENTO:{{paciente.fNac}}</li>
+                <li>TELEFONO:{{paciente.telefono}}</li>
+                <li>EMAIL:{{paciente.email}}</li>  
+                <li>SERVICIO:{{paciente.servicio}}</li>  
+
+                {% endfor %}
+                </ul>
+
+            {% endif %}
+         
+
+         
+
+        {% endblock %}
+
+
+        {% block contenido4 %}
+
+        {% endblock %}
+        {%block contenido5%}
+        {%endblock%}

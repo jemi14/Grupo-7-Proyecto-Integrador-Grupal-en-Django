@@ -1,0 +1,37 @@
+{% extends "AppMedica/padre.html" %}
+
+
+{% load static %}
+
+        {% block contenido %}
+            <h1 class="mb-1">MEDICOS de la BD</h1>
+        {% endblock %}
+
+
+        {% block contenido2 %}
+
+
+            
+            {% for m in medicos %}
+
+
+                <li>MEDICO:   {{ m }}  </li>
+                <button>
+
+                    <a href="{% url 'EliminarMedicos' m.matricula %}">Eliminar</a>
+                    <a href="{% url 'EditarMedicos' m.matricula %}">Editar</a>
+
+                </button>
+
+                <br>
+
+            {% endfor %}
+
+
+            <a href="{% url 'MedicoFormulario'%}">AGREGAR OTRO MÉDICO </a>
+
+        {% endblock %}
+        {%block contenido4%}
+        {%endblock%}
+        {%block contenido5%}
+        {%endblock%}

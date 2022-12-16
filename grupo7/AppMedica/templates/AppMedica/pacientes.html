@@ -1,0 +1,25 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">PACIENTES</h1>
+    {% endblock %}
+
+    {% block contenido2 %}
+        <p class="text-white-75 mb-5">En este espacio podrán ingresar los pacientes que han utilizado el servicio de CHApp Medica y aquellos pacientes nuevos que deseen solicitar un servicio.</p>
+        <a class="btn btn-primary btn-xl" href="{% url 'List' %}">Click si sos paciente de CHApp MEDICA</a>
+        <br>
+        <br>
+        <a class="btn btn-primary btn-xl" href="{% url 'New' %}">Click si sos nuevo por acá</a>
+    {% endblock %}
+
+    {% block contenido3 %}
+
+
+    {% endblock %}
+    {% block contenido4 %}
+
+    {% endblock %}
+    {%block contenido5%}
+    {%endblock%}

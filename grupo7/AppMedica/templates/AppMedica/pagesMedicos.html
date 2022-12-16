@@ -1,0 +1,29 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">Pages Medicos</h1>
+    {% endblock %}
+
+    {% block contenido2 %}
+
+        
+        <h8 class="text-white font-weight-bold">En esta vista, si quien ingresa es un potencial paciente, tendrá a disposición el listado de médicos profesionales que forman parte del staff de CHApp MEDICA. Si ingresa un médico profesional interesado en formar parte del equipo de CHApp MEDICA, podrá ingresar al formulario de registro. </h8>
+        <br>
+        <br>
+        <a class="btn btn-primary btn-xl" href="{% url 'Medicos' %}">CHApp Medicos</a>
+
+
+
+    {% endblock %}
+
+    {% block contenido3 %}
+
+    {% endblock %}
+    {% block contenido4 %}
+
+    {% endblock %}
+    {%block contenido5%}
+    {%endblock%}
+

@@ -1,0 +1,38 @@
+{% extends "AppMedica/padre.html" %}
+
+
+{% load static %}
+
+        {% block contenido %}
+            <h1 class="mb-1">Confirma el delete</h1>
+        {% endblock %}
+
+
+        {% block contenido2 %}
+
+
+            <form method="post"> {% csrf_token %}
+
+                Estas seguro que deseas eliminar? --->  "{{ object }}"
+
+                <input type="submit" value="submit" />
+
+
+
+            </form>
+
+         
+
+        {% endblock %}
+
+        {% block contenido3 %}
+
+
+        {% endblock %}
+        {% block contenido4 %}
+
+        {% endblock %}
+        {%block contenido5%}
+        {%endblock%}
+
+

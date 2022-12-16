@@ -1,0 +1,28 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">Pages Pacientes</h1>
+    {% endblock %}
+
+    {% block contenido2 %}
+
+        <h8 class="text-white font-weight-bold">En esta vista quienes ingresen tendrán dos opciones. Si es un paciente registrado, podrá ingresar para verificar la información del servicio solicitado anteriormente. Si es un paciente que ingresa por primera vez, podrá registrarse con el formulario correspondiente para solicitar un nuevo servicio.</h8>
+        <br>
+        <br>
+        <a class="btn btn-primary btn-xl" href="{% url 'Pacientes' %}">CHApp Pacientes</a>
+
+
+
+    {% endblock %}
+
+    {% block contenido3 %}
+
+    {% endblock %}
+    {% block contenido4 %}
+
+    {% endblock %}
+    {%block contenido5%}
+    {%endblock%}
+

@@ -1,0 +1,48 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">Formulario Ingreso Pacientes</h1>
+    {% endblock %}
+
+    {% block contenido2 %}
+        <p class="text-white-75 mb-5">Bienvenido/Welcome/Bemvindo</p>
+
+        <a class="btn btn-primary btn-xl" href="{% url 'Pacientes' %}">Atras</a>
+    {% endblock %}
+
+    {% block contenido3 %}
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 col-xl-6 text-center">    
+            <h1>Queres ingresar los datos de un paciente?</h1>
+            <p>Completa los siguientes datos y te contactaremos</p>
+            {% if miFormulario.errors %}
+        </div>
+    </div>   
+        <p><Errorrr</p>
+    
+        {% endif %}
+        
+        <form action="/AppMedica/pacienteFormulario/" method="POST">{% csrf_token %}
+            
+
+            <table>
+            
+            {{ miFormulario.as_table }}
+            
+            </table>
+
+            <input type="submit" value="Envio">
+
+        </form>
+
+    {% endblock %}
+    
+    {% block contenido4 %}
+    
+    {% endblock %}
+
+    {%block contenido5%}
+    {%endblock%}
+

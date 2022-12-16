@@ -1,0 +1,33 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">BUSQUEDA MEDICOS</h1>
+    {% endblock %}
+
+    {% block contenido2 %}
+
+        <h1>En este espacio se pueden buscar los médicos del staff de CHApp Medica</h1>
+
+        <form action= "/AppMedica/buscarMedico/" method="GET">
+
+            <input type="text" name="apellido" id="apellido">
+
+            <input type="submit" value="Buscar">
+
+
+
+
+        </form>
+
+
+
+    {% endblock %}
+
+
+    {% block contenido4 %}
+
+    {% endblock %}
+    {%block contenido5%}
+    {%endblock%}

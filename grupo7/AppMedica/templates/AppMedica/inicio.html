@@ -1,0 +1,24 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">App MEDICA</h1>
+      
+        <img src="{{ avatar }}" alt="">
+         
+
+
+    {% endblock %}
+
+    {% block contenido2 %}
+        <p class="text-white-75 mb-5">¿Necesitas asistencia médica? No esperes más!</p>
+        <a class="btn btn-primary btn-xl" href="{% url 'Servicios' %}">ESTAS A UN CLICK DE DISTANCIA</a>
+    {% endblock %}
+
+
+    {% block contenido4 %}
+
+    {% endblock %}
+
+

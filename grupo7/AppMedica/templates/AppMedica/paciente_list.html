@@ -1,0 +1,46 @@
+{% extends "AppMedica/padre.html" %}
+
+
+{% load static %}
+
+        {% block contenido %}
+            <h1 class="mb-1">Lista de Pacientes</h1>
+        {% endblock %}
+
+
+        {% block contenido2 %}
+
+          <p>Acá tenemos todos los Pacientes:</p> <br>
+          <ul>
+            {% for paciente in object_list %}
+            <li>
+
+              <p>APELLIDO: {{ paciente.apellido}}</p>
+
+              <p>
+              <a href="{% url 'Detail' paciente.id %}">Ver más</a>
+              <a href="{% url 'Edit' paciente.id %}">Editar</a>
+              <a href="{% url 'Delete' paciente.id %}">Borrar</a>
+
+            </p>
+
+            </li>
+
+            {% endfor %}
+
+
+
+          </ul>
+         
+
+        {% endblock %}
+
+        {% block contenido3 %}
+
+
+        {% endblock %}
+        {% block contenido4 %}
+
+        {% endblock %}
+        {%block contenido5%}
+        {%endblock%}

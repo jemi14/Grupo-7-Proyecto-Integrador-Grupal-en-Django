@@ -1,0 +1,44 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+        <h1 class="text-white font-weight-bold">Pages</h1>
+    {% endblock %}
+
+    {% block contenido2 %}
+
+        <h4 class="text-white font-weight-bold">MEDICOS - Se observa staff de CHApp MEDICA y se puede registrar un nuevo médico</h4>
+        <a class="btn btn-primary btn-xl" href="{% url 'PagesMedicos' %}">CHApp Medicos</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4 class="text-white font-weight-bold">PACIENTES - Se observa listado de pacientes registrados y se puede ingresar un nuevo paciente</h4>
+        <a class="btn btn-primary btn-xl" href="{% url 'PagesPacientes' %}">CHApp Pacientes</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h4 class="text-white font-weight-bold">CONTACTO - Espacio para realizar una consulta sin estar registrado</h4>
+        <a class="btn btn-primary btn-xl" href="{% url 'PagesContacto' %}">Contacto</a>
+        <br>
+
+
+        <hr>
+
+        <p class="text-white-75 mb-5"></p>
+
+
+
+    {% endblock %}
+
+    {% block contenido3 %}
+
+    {% endblock %}
+    {% block contenido4 %}
+
+    {% endblock %}
+    {%block contenido5%}
+    {%endblock%}
+

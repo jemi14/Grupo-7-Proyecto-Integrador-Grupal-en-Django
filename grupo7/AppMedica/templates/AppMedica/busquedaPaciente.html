@@ -1,0 +1,36 @@
+{% extends 'AppMedica/padre.html' %}
+
+
+{% load static %}
+    {% block contenido %}
+
+        <h1 class="text-white font-weight-bold">BUSQUEDA PACIENTES</h1>
+
+    {% endblock %}
+
+    {% block contenido2 %}
+
+        <h1>En este espacio se pueden buscar los datos de los pacientes</h1>
+
+        <form action= "/AppMedica/buscarPaciente/" method="GET">
+
+            <input type="text" name="apellido" id="apellido">
+
+            <input type="submit" value="Buscar">
+
+
+
+
+        </form>
+
+
+
+    {% endblock %}
+
+
+    {% block contenido4 %}
+
+    {% endblock %}
+   
+    {%block contenido5%}
+    {%endblock%}
